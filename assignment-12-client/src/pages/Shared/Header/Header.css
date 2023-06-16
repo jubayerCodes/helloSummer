@@ -1,0 +1,13 @@
+.custom-dropdown .dropdown-content{
+    width: calc(100vw - 40px);
+    
+}
+
+.custom-dropdown .dropdown-content li a{
+    @apply py-2;
+    color: var(--list-items-color);
+}
+
+/* .custom-dropdown{
+    @apply flex items-center
+} */

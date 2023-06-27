@@ -19,7 +19,7 @@ const Gallery = () => {
     const gallery = [gallery1, gallery2, gallery3, gallery4]
 
     return (
-        <section className='gallery py-16 xl:py-28 bg-center bg-no-repeat px-5' style={{ backgroundImage: `url(${bg})` }}>
+        <section id='gallery-section' className='gallery py-16 xl:py-28 bg-center bg-no-repeat px-5' style={{ backgroundImage: `url(${bg})` }}>
             <SectionHeading whiteText={true} subHeading={'gallery'} heading={'WATCH OUR SUMMER SLIDESHOW'}></SectionHeading>
                 <div className='my-container'>
                     <Swiper

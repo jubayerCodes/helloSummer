@@ -3,32 +3,58 @@
 @tailwind utilities;
 
 * {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 :root {
-  --btn-bg: #FC5640;
-  --list-items-color: #000000
+  --btn-bg: #fc5640;
+  --list-items-color: #000000;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   @apply bg-black;
-  --list-items-color: #ffffffbb
+  --list-items-color: #ffffffbb;
 }
 
 .handwriting {
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
   font-style: italic;
 }
 
 .my-container {
-  @apply w-full xl:w-[1280px] mx-auto px-0
+  @apply w-full xl:w-[1280px] mx-auto px-0;
 }
 
 .my-btn {
-  @apply py-2 uppercase font-semibold text-lg rounded-full bg-[var(--btn-bg)] px-8 text-white border-2 border-[var(--btn-bg)] hover:bg-transparent hover:border-[var(--btn-bg)] hover:text-[var(--btn-bg)] duration-300 disabled:bg-slate-400 disabled:border-slate-400 disabled:text-white
+  @apply py-2 uppercase font-semibold text-lg rounded-full bg-[var(--btn-bg)] px-8 text-white border-2 border-[var(--btn-bg)] hover:bg-transparent hover:border-[var(--btn-bg)] hover:text-[var(--btn-bg)] duration-300 disabled:bg-slate-400 disabled:border-slate-400 disabled:text-white;
 }
 
 .login-btn {
-  @apply py-2 uppercase font-semibold rounded-full bg-[var(--btn-bg)] px-10 text-white border-2 border-[var(--btn-bg)] hover:bg-transparent hover:border-[var(--btn-bg)] hover:text-[var(--btn-bg)] duration-300
+  @apply py-2 uppercase font-semibold rounded-full bg-[var(--btn-bg)] px-10 text-white border-2 border-[var(--btn-bg)] hover:bg-transparent hover:border-[var(--btn-bg)] hover:text-[var(--btn-bg)] duration-300;
+}
+
+.quickLink-card {
+  @apply flex-1;
+}
+
+.quickLink-card div {
+  @apply text-center pt-5 pb-10;
+}
+.quickLink-card span {
+  @apply text-2xl handwriting text-white;
+}
+
+.quickLink-card h3 {
+  @apply text-[28px] text-white font-semibold uppercase mb-5;
+}
+
+.quickLink-card button {
+  @apply rounded-full px-5 btn-md hover:text-white hover:bg-[#444] hover:border-[#444];
+}
+
+.quickLink-card img {
+  -webkit-clip-path: ellipse(50% 30% at 50% 0%);
+  clip-path: ellipse(80% 100% at 50% 0%);
+  width: 100%;
+  margin-bottom: 20px;
 }

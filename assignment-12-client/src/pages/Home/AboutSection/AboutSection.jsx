@@ -4,8 +4,8 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const AboutSection = () => {
     return (
-        <section>
-            <div className="my-container flex justify-between items-center py-20 gap-16">
+        <section className='px-5'>
+            <div className="my-container flex flex-col xl:flex-row justify-between items-center py-20 gap-16">
                 <div className='flex-1'>
                     <div className='mb-10 mx-auto'>
                         <div className="divider uppercase w-[150px] font-semibold text-base text-[#9abe29]">ABOUT US</div>
@@ -21,7 +21,7 @@ const AboutSection = () => {
                         Find Out More
                     </button>
                 </div>
-                <div className='flex-1 flex justify-between items-center gap-5'>
+                <div className='flex-1 flex flex-col-reverse xl:flex-row justify-between items-start xl:items-center gap-12 xl:gap-5'>
 
                     <div className='flex-1'>
                         <h2 className={`text-left text-3xl font-bold underline uppercase`}>

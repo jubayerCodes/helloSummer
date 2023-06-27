@@ -7,8 +7,8 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const QuickLinks = () => {
     return (
-        <section className='py-24 bg-[#F6F5F2]'>
-            <div className="my-container flex justify-between items-center gap-8">
+        <section className='py-24 bg-[#F6F5F2] px-5'>
+            <div className="my-container flex flex-col xl:flex-row justify-between items-center gap-8">
                 <div className='bg-[#9ABE29] quickLink-card'>
                     <img src={card1} alt="" />
                     <div>

@@ -34,7 +34,7 @@
 }
 
 .quickLink-card {
-  @apply flex-1;
+  @apply flex-1 w-full;
 }
 
 .quickLink-card div {

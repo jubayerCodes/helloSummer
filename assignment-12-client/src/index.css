@@ -9,11 +9,13 @@
 :root {
   --btn-bg: #fc5640;
   --list-items-color: #000000;
+  --bg-secondary: #f6f5f2;
 }
 
 [data-theme="dark"] {
   @apply bg-black;
   --list-items-color: #ffffffbb;
+  --bg-secondary: #101418;
 }
 
 .handwriting {
@@ -31,6 +33,10 @@
 
 .login-btn {
   @apply py-2 uppercase font-semibold rounded-full bg-[var(--btn-bg)] px-10 text-white border-2 border-[var(--btn-bg)] hover:bg-transparent hover:border-[var(--btn-bg)] hover:text-[var(--btn-bg)] duration-300;
+}
+
+.quicklinks-section {
+  @apply bg-[var(--bg-secondary)];
 }
 
 .quickLink-card {
@@ -57,4 +63,33 @@
   clip-path: ellipse(80% 100% at 50% 0%);
   width: 100%;
   margin-bottom: 20px;
+}
+
+
+
+
+.ripple {
+  animation: ripple 1s linear infinite;
+}
+
+/* animation */
+
+@keyframes ripple {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2),
+      0 0 0 5px rgba(255, 255, 255, 0.2), 0 0 0 20px rgba(255, 255, 255, 0.2),
+      0 0 0 35px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2),
+      0 0 0 5px rgba(255, 255, 255, 0.2), 0 0 0 20px rgba(255, 255, 255, 0.2),
+      0 0 0 35px rgba(255, 255, 255, 0.2);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2),
+      0 0 0 20px rgba(255, 255, 255, 0.2), 0 0 0 35px rgba(255, 255, 255, 0.2),
+      0 0 0 45px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2),
+      0 0 0 20px rgba(255, 255, 255, 0.2), 0 0 0 35px rgba(255, 255, 255, 0.2),
+      0 0 0 45px rgba(255, 255, 255, 0);
+  }
 }

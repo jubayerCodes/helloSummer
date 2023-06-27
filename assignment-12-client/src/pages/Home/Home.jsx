@@ -7,6 +7,7 @@ import { Fade } from 'react-awesome-reveal';
 import { Helmet } from 'react-helmet-async';
 import QuickLinks from './QuickLinkes/QuickLinks';
 import AboutSection from './AboutSection/AboutSection';
+import VideoSection from './VideoSection/VideoSection';
 
 const Home = () => {
 
@@ -19,6 +20,7 @@ const Home = () => {
             <Fade>
                 <QuickLinks />
                 <AboutSection />
+                <VideoSection />
                 <FeaturedClasses></FeaturedClasses>
                 <Gallery></Gallery>
                 <FeaturedInstructors></FeaturedInstructors>

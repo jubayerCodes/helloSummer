@@ -28,7 +28,7 @@ const VideoSection = () => {
                         height: 720,
                         sources: [
                             {
-                                src: "/public/video.mp4",
+                                src: "/video.mp4",
                                 type: "video/mp4"
                             }
                         ]

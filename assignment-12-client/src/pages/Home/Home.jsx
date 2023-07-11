@@ -8,6 +8,7 @@ import { Helmet } from 'react-helmet-async';
 import QuickLinks from './QuickLinkes/QuickLinks';
 import AboutSection from './AboutSection/AboutSection';
 import VideoSection from './VideoSection/VideoSection';
+import ContactSection from '../Shared/ContactSection/ContactSection';
 
 const Home = () => {
 
@@ -24,6 +25,7 @@ const Home = () => {
                 <FeaturedClasses></FeaturedClasses>
                 <Gallery></Gallery>
                 <FeaturedInstructors></FeaturedInstructors>
+                <ContactSection />
             </Fade>
         </>
     );
